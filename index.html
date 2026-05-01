@@ -8,121 +8,78 @@
   :root { --ink:#1a1a1a; --muted:#5b5b5b; --accent:#1f8a4c; --bg:#ffffff; }
   * { box-sizing: border-box; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--bg); margin: 0; line-height: 1.6; }
-  main { max-width: 760px; margin: 0 auto; padding: 48px 24px 96px; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
   header { border-bottom: 1px solid #eaeaea; padding-bottom: 24px; margin-bottom: 32px; }
-  h1 { font-size: 32px; margin: 0 0 8px; }
-  h2 { font-size: 20px; margin: 32px 0 12px; color: var(--accent); }
-  h3 { font-size: 16px; margin: 20px 0 8px; }
+  h1 { font-size: 30px; margin: 0 0 8px; }
+  h2 { font-size: 19px; margin: 28px 0 10px; color: var(--accent); }
   p, li { font-size: 15px; color: var(--ink); }
   .meta { color: var(--muted); font-size: 13px; }
   ul { padding-left: 20px; }
   a { color: var(--accent); }
-  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
-  th, td { border: 1px solid #eaeaea; padding: 8px 10px; text-align: left; vertical-align: top; }
-  th { background: #f7f7f7; font-weight: 600; }
-  .nav { font-size: 13px; color: var(--muted); }
-  .nav a { color: var(--muted); margin-right: 12px; text-decoration: none; }
-  .nav a:hover { color: var(--accent); }
-  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid #eaeaea; font-size: 13px; color: var(--muted); }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid #eaeaea; font-size: 13px; color: var(--muted); }
 </style>
 </head>
 <body>
 <main>
   <header>
     <h1>Jiive — Privacy Policy</h1>
-    <p class="meta"><strong>Effective date:</strong> 1 May 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> 1 May 2026</p>
-    <p class="nav"><a href="#contact">Contact</a><a href="#data">Data we collect</a><a href="#use">How we use it</a><a href="#share">Who we share with</a><a href="#rights">Your rights</a><a href="#retention">Retention</a><a href="#deletion">Deletion</a></p>
+    <p class="meta"><strong>Effective:</strong> 1 May 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> 1 May 2026</p>
   </header>
 
-  <h2>1. Who we are</h2>
-  <p>Jiive ("Jiive", "we", "our", "us") is a wellness service that calculates your biological age from blood-test biomarkers and provides AI-assisted health guidance over WhatsApp. This policy explains what personal data we collect, how we use it, who we share it with, and the rights you have under India's Digital Personal Data Protection Act, 2023 (DPDP Act).</p>
-  <p>We are the <em>Data Fiduciary</em> for the personal data described in this policy. By using Jiive (including by sending a WhatsApp message to our service), you consent to the data handling described here.</p>
+  <h2>1. About Jiive</h2>
+  <p>Jiive is a wellness service that helps you understand your biological age through blood-test biomarkers, delivered via WhatsApp. This policy explains what personal data we handle and your rights under India's Digital Personal Data Protection Act, 2023 (DPDP Act). By using Jiive, you consent to the practices described here.</p>
 
-  <h2 id="data">2. Data we collect</h2>
-  <table>
-    <tr><th>Category</th><th>What it includes</th><th>Why we collect it</th></tr>
-    <tr><td>Identity</td><td>WhatsApp phone number, name, date of birth, gender</td><td>To create your Jiive account and personalise responses. Your WhatsApp number is your unique identifier — Jiive has no separate login.</td></tr>
-    <tr><td>Health data <strong>(sensitive)</strong></td><td>Blood-biomarker values, biological-age results, lab reports you upload (PDF/photo), AI-generated suggestions</td><td>To calculate biological age, generate personalised wellness suggestions, and let you view your history.</td></tr>
-    <tr><td>Service-delivery</td><td>Pincode, city, state, full address, appointment date/time</td><td>To dispatch a phlebotomist to your home for blood collection.</td></tr>
-    <tr><td>Conversation</td><td>WhatsApp messages you send to Jiive and replies we send back, including image/PDF attachments</td><td>To respond to your queries, improve our AI agent, and resolve support issues.</td></tr>
-    <tr><td>Payment</td><td>Payment status, transaction ID, amount, link timestamps. We do <strong>not</strong> store card numbers, UPI IDs, or banking credentials.</td><td>To confirm purchases and reconcile orders. Payment data is collected and processed by our payment provider (Razorpay).</td></tr>
-    <tr><td>Technical</td><td>Webhook event timestamps, message IDs, device/agent metadata sent by WhatsApp Cloud API</td><td>For fraud prevention, deduplication, and operational reliability.</td></tr>
-  </table>
-
-  <h2 id="use">3. How we use your data</h2>
+  <h2>2. What we collect</h2>
   <ul>
-    <li><strong>To deliver the service</strong> — book blood tests, calculate biological age, send results, answer your questions.</li>
-    <li><strong>To personalise</strong> — Jiive's AI agent ("Lumi") uses your prior conversations and saved preferences to give relevant responses.</li>
-    <li><strong>To process payments</strong> — generate Razorpay payment links and confirm successful payments.</li>
-    <li><strong>To send essential notifications</strong> — fasting reminders before your appointment, payment confirmations, results-ready alerts.</li>
-    <li><strong>To improve our AI</strong> — anonymised conversation samples may be used to evaluate response quality. We do not use identifiable health data for model training.</li>
-    <li><strong>To comply with law</strong> — respond to lawful requests from authorities, prevent fraud, enforce our Terms.</li>
-  </ul>
-  <p>We do <strong>not</strong> sell your personal data to anyone. We do not use your data for advertising or behavioural profiling.</p>
-
-  <h2 id="share">4. Who we share data with</h2>
-  <p>We share the minimum data necessary with trusted third-party service providers ("Data Processors") to deliver the service. These providers fall into the following categories:</p>
-  <ul>
-    <li><strong>Diagnostic lab partners</strong> — to dispatch phlebotomists and process blood samples. Your phone number is masked using a relay number; the lab does not receive your real contact details.</li>
-    <li><strong>Payment processors</strong> — to generate payment links and confirm transactions. Card, UPI, and banking credentials are collected directly by the processor; we do not see or store them.</li>
-    <li><strong>Messaging platform providers</strong> — to deliver and receive messages between you and Jiive over WhatsApp.</li>
-    <li><strong>AI / large-language-model providers</strong> — to generate conversational responses and personalised guidance.</li>
-    <li><strong>Cloud infrastructure providers</strong> — for hosting, storage, and backups, with data encrypted at rest in India-region data centres.</li>
-  </ul>
-  <p>Each provider is bound by contract to use your data only for the stated purpose and to maintain reasonable security safeguards. We do not sell or rent your data to anyone.</p>
-
-  <h2>5. Where your data is stored</h2>
-  <p>Your data is stored in AWS data centres located in Mumbai, India (<code>ap-south-1</code>). Some processing (LLM inference, WhatsApp routing) may occur in regions outside India operated by our partners; in those cases data is transmitted in encrypted form and we maintain contractual safeguards required under the DPDP Act for cross-border transfers.</p>
-
-  <h2 id="retention">6. How long we keep data</h2>
-  <ul>
-    <li><strong>Identity + service data</strong> — for as long as your Jiive account is active, plus up to 12 months after your last interaction.</li>
-    <li><strong>Health results</strong> — retained indefinitely while your account is active so you can view your biological-age history; deleted on account deletion.</li>
-    <li><strong>Conversation history</strong> — most recent 90 days are retained for context; older messages are pruned automatically.</li>
-    <li><strong>Payment records</strong> — retained for 7 years to comply with tax and accounting laws.</li>
-    <li><strong>System logs</strong> — 30 days, used for security and debugging only.</li>
+    <li><strong>Identity</strong> — your WhatsApp number, name, date of birth, gender.</li>
+    <li><strong>Health data</strong> — blood-biomarker values, biological-age results, and reports you upload.</li>
+    <li><strong>Service details</strong> — pincode and address used for at-home sample collection.</li>
+    <li><strong>Conversations</strong> — messages exchanged with our AI assistant.</li>
+    <li><strong>Payment status</strong> — transaction confirmations only. We do not store payment instrument details.</li>
   </ul>
 
-  <h2 id="rights">7. Your rights under the DPDP Act</h2>
-  <p>You have the following rights:</p>
+  <h2>3. How we use it</h2>
   <ul>
-    <li><strong>Right to access</strong> — request a copy of the personal data we hold about you.</li>
-    <li><strong>Right to correction</strong> — fix inaccurate data (you can also do this by messaging Lumi).</li>
-    <li><strong>Right to erasure</strong> — request deletion of your account and associated data (see Section 8).</li>
-    <li><strong>Right to grievance redressal</strong> — raise concerns about how we process your data.</li>
-    <li><strong>Right to nominate</strong> — designate someone to exercise your rights in case of incapacity or death.</li>
-    <li><strong>Right to withdraw consent</strong> — at any time, with effect going forward.</li>
+    <li>To provide the service — bookings, results, AI guidance, reminders.</li>
+    <li>To personalise your experience.</li>
+    <li>To improve service quality and prevent abuse.</li>
+    <li>To meet legal and regulatory obligations.</li>
   </ul>
-  <p>To exercise any right, contact us using the details in Section 10. We will respond within 30 days.</p>
+  <p>We do not sell your data. We do not use it for advertising.</p>
 
-  <h2 id="deletion">8. Account & data deletion</h2>
-  <p>To delete your account and associated data:</p>
-  <ol>
-    <li>Send a WhatsApp message to Jiive saying <em>"delete my account"</em>, or</li>
-    <li>Email <a href="mailto:jiivedevop@jiive.ai">jiivedevop@jiive.ai</a> from the email or phone number associated with your account.</li>
-  </ol>
-  <p>We will delete your identity data, health results, and conversation history within 30 days. Payment records may be retained for the legally required period (Section 6).</p>
+  <h2>4. Sharing</h2>
+  <p>We share the minimum data necessary with trusted service providers to operate the service — including diagnostic lab partners, payment processors, messaging platforms, AI providers, and cloud infrastructure. All providers are bound by confidentiality and security obligations.</p>
+
+  <h2>5. Where data is stored</h2>
+  <p>Your data is stored in India, encrypted at rest. Some processing may occur with global service providers under appropriate safeguards.</p>
+
+  <h2>6. How long we keep it</h2>
+  <p>We retain your data while your account is active and for a reasonable period afterward. Records required by law (e.g., tax records) are retained for the legally mandated period. You may request deletion at any time.</p>
+
+  <h2>7. Your rights</h2>
+  <p>Under the DPDP Act you have the right to access, correct, or delete your data; to withdraw consent; to nominate someone to act on your behalf; and to raise grievances. To exercise any right, contact us at the email below. We respond within 30 days.</p>
+
+  <h2>8. Account deletion</h2>
+  <p>To delete your account, message Jiive on WhatsApp saying <em>"delete my account"</em> or email us. We will erase your data within 30 days, except for records we are legally required to retain.</p>
 
   <h2>9. Security</h2>
-  <p>We protect your data with industry-standard safeguards: TLS encryption in transit, encryption at rest in our database, access controls limiting employee access to data on a need-to-know basis, signed webhook verification (HMAC-SHA256), and regular security reviews. No system is perfectly secure, however, and we cannot guarantee absolute protection.</p>
+  <p>We use industry-standard safeguards to protect your data, including encryption in transit and at rest, and access controls. No system is perfectly secure, and we cannot guarantee absolute protection.</p>
 
-  <h2>10. Children</h2>
-  <p>Jiive is intended for adults aged 18 and above. Our system enforces this minimum during sign-up. If we discover we have collected data from a person under 18, we will delete it.</p>
+  <h2>10. Age</h2>
+  <p>Jiive is for users aged 18 and above.</p>
 
-  <h2 id="contact">11. Contact us</h2>
-  <p>If you have questions about this policy or want to exercise any of your rights:</p>
+  <h2>11. Contact</h2>
   <p>
-    <strong>Data Protection Officer / Privacy Contact</strong><br>
-    Email: <a href="mailto:jiivedevop@jiive.ai">jiivedevop@jiive.ai</a><br>
-    Postal: Jiive India, BUSINESS_ADDRESS_PLACEHOLDER
+    <strong>Jiive India</strong><br>
+    Email: <a href="mailto:jiivedevop@jiive.ai">jiivedevop@jiive.ai</a>
   </p>
-  <p>If you are not satisfied with our response, you may file a complaint with the <a href="https://www.meity.gov.in/" target="_blank" rel="noopener">Data Protection Board of India</a>.</p>
+  <p>If unsatisfied with our response, you may approach the Data Protection Board of India.</p>
 
-  <h2>12. Changes to this policy</h2>
-  <p>We may update this policy from time to time. The "Last updated" date at the top reflects the most recent change. Material changes will be notified via WhatsApp to active users.</p>
+  <h2>12. Changes</h2>
+  <p>We may update this policy from time to time. The "Last updated" date above reflects the most recent change.</p>
 
   <footer>
-    © 2026 Jiive. All rights reserved. &nbsp;|&nbsp; <a href="#">Back to top</a>
+    © 2026 Jiive India. All rights reserved.
   </footer>
 </main>
 </body>
