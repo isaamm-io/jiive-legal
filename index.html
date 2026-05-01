@@ -61,16 +61,15 @@
   <p>We do <strong>not</strong> sell your personal data to anyone. We do not use your data for advertising or behavioural profiling.</p>
 
   <h2 id="share">4. Who we share data with</h2>
-  <p>We share the minimum data necessary with the following partners ("Data Processors") to deliver the service:</p>
-  <table>
-    <tr><th>Partner</th><th>What we share</th><th>Purpose</th></tr>
-    <tr><td>Thyrocare Technologies Ltd. (lab partner)</td><td>Patient name, age, gender, address (city + pincode), appointment slot. Phone number is masked using a relay number — we do not share your real WhatsApp phone with the lab.</td><td>To dispatch phlebotomist and process the blood sample.</td></tr>
-    <tr><td>Razorpay Software Pvt. Ltd. (payment processor)</td><td>Payment amount, order reference. Razorpay collects payment instrument details directly from you; we do not see them.</td><td>To process payment links.</td></tr>
-    <tr><td>Meta Platforms / WhatsApp Cloud API</td><td>Your WhatsApp phone number and message contents (encrypted in transit by WhatsApp).</td><td>To deliver and receive messages between you and Jiive.</td></tr>
-    <tr><td>OpenAI (or equivalent LLM provider)</td><td>Text content of your messages and biomarker values, sent in real time to generate AI responses. We do not send WhatsApp phone numbers or names with these requests where avoidable.</td><td>To run the AI agent that powers Jiive's conversation.</td></tr>
-    <tr><td>Cloud infrastructure (Amazon Web Services, India region)</td><td>All data described above, stored encrypted at rest in our database in <em>ap-south-1</em> (Mumbai).</td><td>Hosting, storage, backups.</td></tr>
-  </table>
-  <p>Each partner is contractually required to use your data only for the stated purpose and to maintain reasonable security safeguards.</p>
+  <p>We share the minimum data necessary with trusted third-party service providers ("Data Processors") to deliver the service. These providers fall into the following categories:</p>
+  <ul>
+    <li><strong>Diagnostic lab partners</strong> — to dispatch phlebotomists and process blood samples. Your phone number is masked using a relay number; the lab does not receive your real contact details.</li>
+    <li><strong>Payment processors</strong> — to generate payment links and confirm transactions. Card, UPI, and banking credentials are collected directly by the processor; we do not see or store them.</li>
+    <li><strong>Messaging platform providers</strong> — to deliver and receive messages between you and Jiive over WhatsApp.</li>
+    <li><strong>AI / large-language-model providers</strong> — to generate conversational responses and personalised guidance.</li>
+    <li><strong>Cloud infrastructure providers</strong> — for hosting, storage, and backups, with data encrypted at rest in India-region data centres.</li>
+  </ul>
+  <p>Each provider is bound by contract to use your data only for the stated purpose and to maintain reasonable security safeguards. We do not sell or rent your data to anyone.</p>
 
   <h2>5. Where your data is stored</h2>
   <p>Your data is stored in AWS data centres located in Mumbai, India (<code>ap-south-1</code>). Some processing (LLM inference, WhatsApp routing) may occur in regions outside India operated by our partners; in those cases data is transmitted in encrypted form and we maintain contractual safeguards required under the DPDP Act for cross-border transfers.</p>
